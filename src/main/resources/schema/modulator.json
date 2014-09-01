@@ -1,0 +1,45 @@
+{
+    "type":"object",
+    "title":"Modulator",
+    "javaInterfaces" : ["ems.driver.domain.Driver"],
+    "javaType": "ems.driver.domain.modulator.Modulator",
+    "properties":{
+        "status":{
+            "title":"Status",
+            "javaType": "ems.driver.domain.common.Status",
+            "type":"string",
+            "enum":[ "ok", "warn", "error", "unknown" ]
+        },
+        "power":{
+            "title":"Power",
+            "type":"number"
+        },
+        "reflected-power":{
+            "title":"Reflected power",
+            "type":"number"
+        },
+        "nominal-power":{
+            "title":"Nominal power",
+            "type":"integer"
+        },
+        "location":{
+            "title":"Location",
+            "javaType": "ems.driver.domain.common.Location",
+            "type":"object",
+            "properties":{
+                "latitude":{
+                    "title":"Latitude",
+                    "type":"number"
+                },
+                "longitude":{
+                    "title":"Longitude",
+                    "type":"number"
+                }
+            }
+        },
+        "alarm":{
+            "title":"Alarm",
+            "type":"boolean"
+        }
+    }
+}

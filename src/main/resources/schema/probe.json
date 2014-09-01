@@ -1,0 +1,144 @@
+{
+    "title":"Probe",
+    "javaInterfaces" : ["ems.driver.domain.Driver"],
+    "javaType": "ems.driver.domain.probe.Probe",
+    "type":"object",
+    "properties":{
+        "status":{
+            "title":"Status",
+            "javaType": "ems.driver.domain.common.Status",
+            "type":"string",
+            "enum":[ "ok", "warn", "error", "unknown" ]
+        },
+        "rfInput":{
+            "title":"RF Boards",
+            "type":"array",
+            "items":{
+                "title":"RF Input",
+                "type":"object",
+                "properties":{
+                    "port":{
+                        "title":"Port",
+                        "type":"integer"
+                    },
+                    "lockStatus":{
+                        "title":"Lock",
+                        "javaType": "ems.driver.domain.probe.LockStatus",
+                        "type":"string",
+                        "enum":[ "lock", "unlock" ]
+                    },
+                    "standard":{
+                        "title":"Standard",
+                        "javaType": "ems.driver.domain.probe.Standard",
+                        "type":"string",
+                        "enum":["DVB-T", "DVB-T2"]
+                    },
+                    "alarms":{
+                        "title":"Alarms",
+                        "javaType": "ems.driver.domain.probe.RfAlarms",
+                        "type":"object",
+                        "properties":{
+                            "etr290":{
+                                "title":"ETR290",
+                                "type":"boolean"
+                            },
+                            "stream":{
+                                "title":"Stream",
+                                "type":"boolean"
+                            },
+                            "rf":{
+                                "title":"RF",
+                                "type":"boolean"
+                            }
+                        }
+                    },
+                    "measures":{
+                        "title":"Measures",
+                        "javaType": "ems.driver.domain.probe.RfMeasures",
+                        "type":"object",
+                        "properties":{
+                            "mer":{
+                                "title":"MER",
+                                "type":"number"
+                            },
+                            "snr":{
+                                "title":"SNR",
+                                "type":"number"
+                            },
+                            "rfLevel":{
+                                "title":"RF Level",
+                                "type":"number"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "tsInput":{
+            "title":"TS Boards",
+            "type":"array",
+            "items":{
+                "title":"TS Input",
+                "type":"object",
+                "properties":{
+                    "port":{
+                        "title":"Port",
+                        "type":"integer"
+                    },
+                    "lockStatus":{
+                        "title":"Lock",
+                        "javaType": "ems.driver.domain.probe.LockStatus",
+                        "type":"string",
+                        "enum":[ "lock", "unlock" ]
+                    },
+                    "alarms":{
+                        "title":"Alarms",
+                        "javaType": "ems.driver.domain.probe.TsAlarms",
+                        "type":"object",
+                        "properties":{
+                            "etr290":{
+                                "title":"ETR290",
+                                "type":"boolean"
+                            },
+                            "stream":{
+                                "title":"Stream",
+                                "type":"boolean"
+                            }
+                        }
+                    },
+                    "measures":{
+                        "title":"Measures",
+                        "javaType": "ems.driver.domain.probe.TsMeasures",
+                        "type":"object",
+                        "properties":{
+                            "packet":{
+                                "title":"Packet format",
+                                "type":"string",
+                                "enum":["188", "204", "208"]
+                            },
+                            "cd":{
+                                "title":"Carried detect",
+                                "type":"boolean"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "location":{
+            "title":"Location",
+            "javaType": "ems.driver.domain.common.Location",
+            "type":"object",
+            "properties":{
+                "latitude":{
+                    "title":"Latitude",
+                    "type":"number"
+                },
+                "longitude":{
+                    "title":"Longitude",
+                    "type":"number"
+                }
+            }
+        }
+    }
+}

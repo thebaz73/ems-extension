@@ -1,0 +1,18 @@
+{
+    "title":"Router",
+    "javaInterfaces" : ["ems.driver.domain.Driver"],
+    "javaType": "ems.driver.domain.router.Router",
+    "type":"object",
+    "properties":{
+        "status":{
+            "title":"Status",
+            "javaType": "ems.driver.domain.common.Status",
+            "type":"string",
+            "enum":[ "ok", "warn", "error", "unknown" ]
+        },
+        "alarm":{
+            "title":"Alarm",
+            "type":"boolean"
+        }
+    }
+}
