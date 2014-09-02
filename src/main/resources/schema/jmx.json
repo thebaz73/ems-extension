@@ -1,0 +1,13 @@
+{
+    "type":"object",
+    "title":"Modulator",
+    "javaInterfaces" : ["ems.protocol.domain.Protocol"],
+    "javaType": "ems.protocol.domain.jmx.JmxProtocol",
+    "properties":{
+        "protocolType":{
+            "$ref": "protocol_type.json",
+            "default": "jmx"
+        }
+    },
+    "additionalProperties": false
+}

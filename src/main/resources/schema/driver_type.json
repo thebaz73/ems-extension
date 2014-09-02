@@ -1,6 +1,6 @@
 {
     "title":"Type",
-    "javaType": "ems.driver.domain.common.DriverType",
+    "javaType": "ems.driver.domain.DriverType",
     "type":"string",
     "enum":[ "modulator", "probe", "router" ]
 }

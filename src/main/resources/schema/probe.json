@@ -1,17 +1,14 @@
 {
     "title":"Probe",
     "javaInterfaces" : ["ems.driver.domain.Driver"],
-    "javaType": "ems.driver.domain.probe.Probe",
+    "javaType": "ems.driver.domain.probe.ProbeDriver",
     "type":"object",
     "properties":{
         "status":{
-            "title":"Status",
-            "javaType": "ems.driver.domain.common.Status",
-            "type":"string",
-            "enum":[ "ok", "warn", "error", "unknown" ]
+            "$ref": "status.json"
         },
         "type" : {
-            "$ref": "type.json"
+            "$ref": "driver_type.json"
         },
         "rfInput":{
             "title":"RF Boards",
@@ -129,19 +126,7 @@
             }
         },
         "location":{
-            "title":"Location",
-            "javaType": "ems.driver.domain.common.Location",
-            "type":"object",
-            "properties":{
-                "latitude":{
-                    "title":"Latitude",
-                    "type":"number"
-                },
-                "longitude":{
-                    "title":"Longitude",
-                    "type":"number"
-                }
-            }
+            "$ref": "location.json"
         }
     }
 }

@@ -1,4 +1,4 @@
-package ems.driver.protocol;
+package ems.protocol.domain;
 
 
 /**

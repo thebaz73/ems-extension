@@ -1,0 +1,15 @@
+{
+    "title":"Location",
+    "javaType": "ems.driver.domain.common.Location",
+    "type":"object",
+    "properties":{
+        "latitude":{
+            "title":"Latitude",
+            "type":"number"
+        },
+        "longitude":{
+            "title":"Longitude",
+            "type":"number"
+        }
+    }
+}

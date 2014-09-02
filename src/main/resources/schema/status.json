@@ -1,0 +1,6 @@
+{
+    "title":"Status",
+    "javaType": "ems.driver.domain.common.Status",
+    "type":"string",
+    "enum":[ "ok", "warn", "error", "unknown" ]
+}

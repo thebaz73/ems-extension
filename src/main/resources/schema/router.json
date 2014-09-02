@@ -1,17 +1,14 @@
 {
     "title":"Router",
     "javaInterfaces" : ["ems.driver.domain.Driver"],
-    "javaType": "ems.driver.domain.router.Router",
+    "javaType": "ems.driver.domain.router.RouterDriver",
     "type":"object",
     "properties":{
         "status":{
-            "title":"Status",
-            "javaType": "ems.driver.domain.common.Status",
-            "type":"string",
-            "enum":[ "ok", "warn", "error", "unknown" ]
+            "$ref": "status.json"
         },
         "type" : {
-            "$ref": "type.json"
+            "$ref": "driver_type.json"
         },
         "alarm":{
             "title":"Alarm",

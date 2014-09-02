@@ -1,14 +1,11 @@
 {
     "type":"object",
     "title":"Modulator",
-    "javaInterfaces" : ["ems.driver.protocol.Protocol"],
-    "javaType": "ems.driver.protocol.SnmpProtocol",
+    "javaInterfaces" : ["ems.protocol.domain.Protocol"],
+    "javaType": "ems.protocol.domain.snmp.SnmpProtocol",
     "properties":{
         "protocolType":{
-            "title":"ProtocolType",
-            "javaType": "ems.driver.protocol.ProtocolType",
-            "type":"string",
-            "enum":[ "snmp", "jmx", "modbus" ],
+            "$ref": "protocol_type.json",
             "default": "snmp"
         },
         "version":{
