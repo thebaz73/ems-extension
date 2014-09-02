@@ -6,7 +6,7 @@
     <name>EMS Driver parent</name>
 
     <groupId>ems.server</groupId>
-    <artifactId>ems-drivers</artifactId>
+    <artifactId>ems-extension</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <dependencies>
@@ -40,7 +40,7 @@
                 <version>0.4.5</version>
                 <configuration>
                     <sourceDirectory>${basedir}/src/main/resources/schema</sourceDirectory>
-                    <targetPackage>ems.driver.domain.probe</targetPackage>
+                    <targetPackage>ems.driver</targetPackage>
                     <useDoubleNumbers>true</useDoubleNumbers>
                     <annotationStyle>none</annotationStyle>
                     <includeToString>false</includeToString>

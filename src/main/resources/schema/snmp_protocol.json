@@ -1,0 +1,29 @@
+{
+    "type":"object",
+    "title":"Modulator",
+    "javaInterfaces" : ["ems.driver.protocol.Protocol"],
+    "javaType": "ems.driver.protocol.SnmpProtocol",
+    "properties":{
+        "protocolType":{
+            "title":"ProtocolType",
+            "javaType": "ems.driver.protocol.ProtocolType",
+            "type":"string",
+            "enum":[ "snmp", "jmx", "modbus" ],
+            "default": "snmp"
+        },
+        "version":{
+            "title":"Version",
+            "type":"string",
+            "enum":[ "version 1", "version 2", "version 2c" ]
+        },
+        "readCommunity":{
+            "title":"Read Community",
+            "type":"string"
+        },
+        "writeCommunity":{
+            "title":"Write Community",
+            "type":"string"
+        }
+    },
+    "additionalProperties": false
+}

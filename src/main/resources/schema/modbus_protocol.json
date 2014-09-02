@@ -1,0 +1,16 @@
+{
+    "type":"object",
+    "title":"Modulator",
+    "javaInterfaces" : ["ems.driver.protocol.Protocol"],
+    "javaType": "ems.driver.protocol.ModBusProtocol",
+    "properties":{
+        "protocolType":{
+            "title":"ProtocolType",
+            "javaType": "ems.driver.protocol.ProtocolType",
+            "type":"string",
+            "enum":[ "snmp", "jmx", "modbus" ],
+            "default": "modbus"
+        }
+    },
+    "additionalProperties": false
+}

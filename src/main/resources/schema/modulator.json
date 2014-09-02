@@ -10,6 +10,9 @@
             "type":"string",
             "enum":[ "ok", "warn", "error", "unknown" ]
         },
+        "type" : {
+            "$ref": "type.json"
+        },
         "power":{
             "title":"Power",
             "type":"number"
