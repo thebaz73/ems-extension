@@ -1,6 +1,6 @@
 {
     "type":"object",
-    "title":"Modulator",
+    "title":"SNMP Protocol",
     "javaInterfaces" : ["ems.protocol.domain.Protocol"],
     "javaType": "ems.protocol.domain.snmp.SnmpProtocol",
     "properties":{

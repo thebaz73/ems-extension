@@ -1,6 +1,6 @@
 {
     "type":"object",
-    "title":"Modulator",
+    "title":"JMX Protocol",
     "javaInterfaces" : ["ems.protocol.domain.Protocol"],
     "javaType": "ems.protocol.domain.jmx.JmxProtocol",
     "properties":{

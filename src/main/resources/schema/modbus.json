@@ -1,6 +1,6 @@
 {
     "type":"object",
-    "title":"Modulator",
+    "title":"ModBUS Protocol",
     "javaInterfaces" : ["ems.protocol.domain.Protocol"],
     "javaType": "ems.protocol.domain.modbus.ModBusProtocol",
     "properties":{
