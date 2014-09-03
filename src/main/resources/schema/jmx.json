@@ -5,7 +5,10 @@
     "javaType": "ems.protocol.domain.jmx.JmxProtocol",
     "properties":{
         "protocolType":{
-            "$ref": "protocol_type.json",
+            "title":"ProtocolType",
+            "javaType": "ems.protocol.domain.ProtocolType",
+            "type":"string",
+            "enum":[ "snmp", "jmx", "modbus" ],
             "default": "jmx"
         }
     },

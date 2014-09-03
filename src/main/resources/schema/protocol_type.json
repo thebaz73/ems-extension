@@ -1,6 +1,0 @@
-{
-    "title":"ProtocolType",
-    "javaType": "ems.protocol.domain.ProtocolType",
-    "type":"string",
-    "enum":[ "snmp", "jmx", "modbus" ]
-}
