@@ -14,5 +14,6 @@
             "title":"Alarm",
             "type":"boolean"
         }
-    }
+    },
+    "additionalProperties": false
 }

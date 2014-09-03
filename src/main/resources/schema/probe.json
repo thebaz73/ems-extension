@@ -128,5 +128,6 @@
         "location":{
             "$ref": "location.json"
         }
-    }
+    },
+    "additionalProperties": false
 }
