@@ -50,7 +50,8 @@
                                 "title":"RF",
                                 "type":"boolean"
                             }
-                        }
+                        },
+                        "additionalProperties": false
                     },
                     "measures":{
                         "title":"Measures",
@@ -69,10 +70,12 @@
                                 "title":"RF Level",
                                 "type":"number"
                             }
-                        }
+                        },
+                        "additionalProperties": false
                     }
                 }
-            }
+            },
+            "additionalProperties": false
         },
         "tsInput":{
             "title":"TS Boards",
@@ -104,7 +107,8 @@
                                 "title":"Stream",
                                 "type":"boolean"
                             }
-                        }
+                        },
+                        "additionalProperties": false
                     },
                     "measures":{
                         "title":"Measures",
@@ -120,10 +124,12 @@
                                 "title":"Carried detect",
                                 "type":"boolean"
                             }
-                        }
+                        },
+                        "additionalProperties": false
                     }
                 }
-            }
+            },
+            "additionalProperties": false
         },
         "location":{
             "$ref": "location.json"
