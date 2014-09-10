@@ -75,9 +75,9 @@
                         },
                         "additionalProperties": false
                     }
-                }
-            },
-            "additionalProperties": false
+                },
+                "additionalProperties": false
+            }
         },
         "tsInput":{
             "title":"TS Boards",
@@ -131,9 +131,9 @@
                         },
                         "additionalProperties": false
                     }
-                }
-            },
-            "additionalProperties": false
+                },
+                "additionalProperties": false
+            }
         },
         "location":{
             "$ref": "location.json"
