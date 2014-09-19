@@ -8,7 +8,7 @@
             "title":"ProtocolType",
             "javaType": "ems.protocol.domain.ProtocolType",
             "type":"string",
-            "enum":[ "snmp", "jmx", "modbus" ],
+            "enum":[ "snmp", "jmx", "modbus", "demo" ],
             "default": "modbus"
         }
     },

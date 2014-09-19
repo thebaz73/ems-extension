@@ -1,15 +1,15 @@
 {
     "type":"object",
-    "title":"JMX Protocol",
+    "title":"Demo Protocol",
     "javaInterfaces" : ["ems.protocol.domain.Protocol"],
-    "javaType": "ems.protocol.domain.jmx.JmxProtocol",
+    "javaType": "ems.protocol.domain.demo.DemoProtocol",
     "properties":{
         "protocolType":{
             "title":"ProtocolType",
             "javaType": "ems.protocol.domain.ProtocolType",
             "type":"string",
             "enum":[ "snmp", "jmx", "modbus", "demo" ],
-            "default": "jmx"
+            "default": "demo"
         }
     },
     "additionalProperties": false
