@@ -14,11 +14,11 @@
             "title":"Power",
             "type":"number"
         },
-        "reflected-power":{
+        "reflectedPower":{
             "title":"Reflected power",
             "type":"number"
         },
-        "nominal-power":{
+        "nominalPower":{
             "title":"Nominal power",
             "type":"integer"
         },
