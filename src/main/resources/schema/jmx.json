@@ -10,6 +10,10 @@
             "type":"string",
             "enum":[ "snmp", "jmx", "modbus", "demo" ],
             "default": "jmx"
+        },
+        "beanName":{
+            "title":"Bean name",
+            "type":"string"
         }
     },
     "additionalProperties": false
