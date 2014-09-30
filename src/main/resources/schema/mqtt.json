@@ -1,19 +1,20 @@
 {
     "type":"object",
-    "title":"JMX Protocol",
+    "title":"Mqtt Protocol",
     "javaInterfaces" : ["ems.protocol.domain.Protocol"],
-    "javaType": "ems.protocol.domain.jmx.JmxProtocol",
+    "javaType": "ems.protocol.domain.mqtt.MqttProtocol",
     "properties":{
         "protocolType":{
             "title":"ProtocolType",
             "javaType": "ems.protocol.domain.ProtocolType",
             "type":"string",
             "enum":[ "snmp", "jmx", "modbus", "mqtt", "demo" ],
-            "default": "jmx"
+            "default": "mqtt"
         },
-        "beanName":{
-            "title":"Bean name",
-            "type":"string"
+        "connectionType": {
+            "title":"Connection Type",
+            "type":"string",
+            "enum":[ "tcp", "ssl" ]
         }
     },
     "additionalProperties": false
